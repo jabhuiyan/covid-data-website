@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>COVID-19 Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>COVID-19 DATA</h1>
+    <div class="tab">
+        <button id="btn-list-data" class="tablinks">Retrieve</button>
+        <button class="tablinks">Deaths</button>
+    </div>
+
+    <div id="retrieve-data" class="tabcontent">
+        <form>
+            <label for="find-date">Date</label>
+            <input type="text" id="date-search">
+            <div>
+                <button id="btn-read-data">Search</button>
+                <output id="retrieved"></output>
+            </div>
+        </form>
+        <hr>
+        <div id="list-covid"></div>
+        <hr>
+        <h2>Update Field (Only update cases and deaths)</h2>
+        <div class="flex-container">
+            <label for="find-new-cases">New Cases</label>
+            <input type="text" id="find-new-cases">
+            <label for="find-total-cases">Total Cases</label>
+            <input type="text" id="find-total-cases">
+            <label for="find-new-deaths">New Deaths</label>
+            <input type="text" id="find-new-deaths">
+            <label for="find-total-deaths">Total Deaths</label>
+            <input type="text" id="find-total-deaths">
+        </div>
+        <div class="flex-button-container">
+            <button id="btn-update-data">Update</button>
+            <button id="btn-delete-data">Delete</button>
+            <output id="update-delete-out"></output>
+        </div>
+    </div>
+
+    <div id="list-deaths" class="tabcontent">
+        <form>
+            <label for="start-date">Start Date</label>
+            <input type="text" id="start-date" name="starting">
+            <label for="end-date">End Date</label>
+            <input type="text" id="end-date" name="ending">
+            <div>
+                <button id="find-deaths-btn">Find Deaths</button>
+                <output id="death-out"></output>
+            </div>
+        </form>
+        <hr>
+        <div id="show-death"></div>
+    </div>  
+
+    <script src="./js/main.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/deaths.js"></script>
+</body>
