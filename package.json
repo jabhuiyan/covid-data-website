@@ -1,0 +1,20 @@
+
+{
+    "name": "covid-app-v1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "jabhuiyan",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "express": "^4.18.2",
+        "mongodb": "^5.0.1"
+    },
+    "devDependencies": {
+        "mocha": "^9.2.2"
+    },
+    "type": "module"
+}
