@@ -1,5 +1,7 @@
 # covid-data-website
 
+![image](https://github.com/jabhuiyan/covid-data-website/blob/main/view/covid.png)
+
 ----------------------------------------
 implementation of a javascript server and its client side to access a MongoDB database containing Canadian covid data. Canadian covid data has been taken from <https://ourworldindata.org/coronavirus> and provided in the data file `can.csv`.
 
